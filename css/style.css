@@ -11,6 +11,7 @@
 
  .wrapper {
      width: 100%;
+     min-height: 100vh;
      background: url(../img/background.jpg);
      background-size: cover;
      margin: 0px auto;
@@ -38,16 +39,16 @@
      max-height: 95vh;
  }
 
- .fete-image-logo{
-    opacity: 1;
+ .fete-image-logo {
+     opacity: 1;
  }
 
- .fete-image-logo:hover{
-    opacity: 0.6;
+ .fete-image-logo:hover {
+     opacity: 0.6;
  }
 
  .right-container {
-    width: 35%;
+     width: 35%;
      flex-direction: column;
      align-items: baseline;
  }
@@ -71,25 +72,27 @@
  }
 
  .iframe-map {
-    width: 100%;
+     width: 100%;
      height: 50vh;
  }
 
- @media only screen and (max-width: 1000px) {
-    body {
-        background-color: lightblue;
-    }
+ @media only screen and (max-width: 843px) {
+     .flex {
+         flex-direction: column;
+     }
 
-    .flex {
-        flex-direction: column;
-    }
+     .container-block {
+         width: 100%;
+         align-items: center;
+     }
 
-    .container-block {
-        width: 100%;
-    }
+     .fete-paragraph {
+         text-align: center;
+         font-weight: 600;
+     }
 
-    .icons {
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-}
+     .icons {
+         justify-content: center;
+         margin-bottom: 30px;
+     }
+ }
